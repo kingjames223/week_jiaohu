@@ -50,15 +50,7 @@
 <!--{elseif !$_G[connectguest]}-->
 
 <ul class="log-dropdown" style="display:none;">
-    <li><a href="member.php?mod=logging&action=login&referer={echo rawurlencode($dreferer)}" onclick="showWindow('login', this.href);return false;" title="$week_lang[4]" onMouseOver="showMenu({'ctrlid':this.id,'ctrlclass':'a'})" class="week-button week-button-primary center" style="color:#FFF !important;">$week_lang[4]</a></li>
-    <li class="signup-help">$week_lang[0] <a href="member.php?mod={$_G[setting][regname]}" title="$week_lang[3]">$week_lang[3]</a></li>
-    <li><hr class="log-dd-sep"></li>
     <li><a href="plugin.php?id=wq_qqlogin&amp;mod=access&amp;op=init" title="$week_lang[2]"><span class="i_qq"></span>$week_lang[2]</a></li>
-    <!--{if $wk_wxdl}-->
-    <li><a href="plugin.php?id=wechat:login" title="$week_lang[1]"><span class="i_wx"></span>$week_lang[1]</a></li>
-    <!--{else}-->
-    <li><a href="javascript:;" onClick="showWindow('wechat_bind', 'plugin.php?id=wechat:bind')" title="$week_lang[1]"><span class="i_wx"></span>$week_lang[1]</a></li>
-    <!--{/if}-->
 </ul> 
         
 <!--{else}-->
